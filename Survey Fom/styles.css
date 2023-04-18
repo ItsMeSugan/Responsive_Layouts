@@ -1,0 +1,82 @@
+body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#outside{
+  background-color: lightblue;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+h1{
+  font-size: 1.5rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+form{
+  margin: 0 auto;
+  width: 70%;
+  padding: 1em;
+  border: 1px solid #c9c9c9;
+  border-radius: 1em;
+}
+
+#name_label, #email_label, #number_label {
+  display: inline-block;
+  width: 200px;
+  text-align: right;
+}
+
+#survey-form{
+  background-color: white;
+}
+
+fieldset{
+  border: 1px solid lightgray;
+  margin: 10px;
+}
+
+legend{
+  font-weight: 700;
+}
+
+#number{
+  width:150px;
+}
+
+div + div{
+  margin-top: 1em;
+}
+
+button {
+  margin: .5em;
+  font-size: 1em;
+  text-transform: capitalize;
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+#submitbutton {
+  display: flex; 
+  justify-content: center;
+}
+
+input {
+  margin: 0;
+  width: 250px;
+  height: 25px;
+  border: 1px solid #999;
+}
+ textarea {
+  width: 500px;
+  height: 100px;
+  border: 1px solid #999;
+}
+
+#description {
+  text-align: center;
+}

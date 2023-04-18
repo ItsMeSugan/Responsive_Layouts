@@ -3,30 +3,30 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css" >
-    <title>Survey Form</title>
+    <title>Dating Application Survey Form</title>
   </head>
   <body>
+    <div id="outside">
     <form id="survey-form">
       <h1 id="title">Survey Form</h1>
-      <p id="description">Description about the survey form goes here</p>
+      <p id="description">Collecting details from random adults about their relationship status</p>
 
 <!-- personal details -->
 
-      <fieldset>
+      <fieldset >
         <legend>Personal Details</legend>
+        <br>
       <div>
-      <label for="name" id="name-label">Name : 
-      <input type="text" name="name" id="name" placeholder="Enter your Name" required/>
-      </label>
+      <label for="name" id="name-label">Name : </label>
+      <input type="text" align="right" name="name" id="name" placeholder="Enter your Name" required>
       </div>
       <div>
-      <label for="email" id="email-label">Email Id : 
+      <label for="email" id="email-label">Email Id : </label>
       <input type="email" name="email" id="email" placeholder="Enter your Email" required/>
-      </label>
       </div>
       <div>
         <label for="phone" id="number-label">Phone Number:</label>
-        <input type="number" id="phone" name="phone" placeholder="Enter your 10 digit number" min="1" max="10">
+        <input type="text" id="phone" name="phone" placeholder="Enter your 10 digit number" maxlength="10">
       </div>
       <div>
       <label for="number" id="number-label">Your Age : </label>
@@ -46,9 +46,9 @@
   <legend>Check that Apply</legend>
   <p>
     <input type="checkbox" name="q1">I have a Job<br>
-    <input type="checkbox" name="q2"> I have a House and Car<br>
-    <input type="checkbox" name="q3"> I don't mind dating a older person then me<br>
-    <input type="checkbox" name="q4">Divorced before<br>
+    <input type="checkbox" name="q2">I have a House and Car<br>
+    <input type="checkbox" name="q3">I would not date someone older person then me<br>
+    <input type="checkbox" name="q4">I have been divorced before<br>
   </p>
 </fieldset>
 <br>
@@ -56,6 +56,7 @@
 
 <fieldset>
   <legend>Select the category that includes here</legend>
+  <br>
   <div>
     <label for="Noofpartners">How many Relations have you been with :</label>
     <select name="Noofpartners" id="dropdown">
@@ -90,5 +91,6 @@
   <button id="submit" type="submit">Send Application</button>
 </div>
     </form>
+    </div>
   </body>
 </html>  
