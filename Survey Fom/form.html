@@ -6,29 +6,89 @@
     <title>Survey Form</title>
   </head>
   <body>
-    <h1 id="title">Survey Form</h1>
-    <p id="description">Description about the survey form goes here</p>
     <form id="survey-form">
+      <h1 id="title">Survey Form</h1>
+      <p id="description">Description about the survey form goes here</p>
+
+<!-- personal details -->
+
+      <fieldset>
+        <legend>Personal Details</legend>
+      <div>
       <label for="name" id="name-label">Name : 
       <input type="text" name="name" id="name" placeholder="Enter your Name" required/>
       </label>
+      </div>
+      <div>
       <label for="email" id="email-label">Email Id : 
       <input type="email" name="email" id="email" placeholder="Enter your Email" required/>
       </label>
-      <label for="number" id="number-label">Your Age : 
+      </div>
+      <div>
+        <label for="phone" id="number-label">Phone Number:</label>
+        <input type="number" id="phone" name="phone" placeholder="Enter your 10 digit number" min="1" max="10">
+      </div>
+      <div>
+      <label for="number" id="number-label">Your Age : </label>
       <input type="number" id="number" min="18" max="25" placeholder="Enter your Age"/>
-      </label>
-      <select id="dropdown">
-        <option></option>
-        <option></option>
-        <option></option>
-      </select>
-      <input type="radio" value="radio1" name="radio1">
-      <input type="radio" value="radio2" name="radio1">
-      <input type="checkbox" value="checkbox1">
-      <input type="checkbox" value="checkbox2">
-      <textarea></textarea>
-      <button type="submit" id="submit">Submit</button>
+      </div>
+      <div>
+        <label for="gender">Gender</label>
+        <p>
+          <input type="radio" name="gender" value="male" checked>Male <br>
+          <input type="radio" name="gender" value="Female">Female <br>
+          <input type="radio" name="gender" value="others">Others <br>
+        </p>  
+</fieldset>
+
+<!-- checkboxes -->
+<fieldset>
+  <legend>Check that Apply</legend>
+  <p>
+    <input type="checkbox" name="q1">I have a Job<br>
+    <input type="checkbox" name="q2"> I have a House and Car<br>
+    <input type="checkbox" name="q3"> I don't mind dating a older person then me<br>
+    <input type="checkbox" name="q4">Divorced before<br>
+  </p>
+</fieldset>
+<br>
+<!-- dropdown menus -->
+
+<fieldset>
+  <legend>Select the category that includes here</legend>
+  <div>
+    <label for="Noofpartners">How many Relations have you been with :</label>
+    <select name="Noofpartners" id="dropdown">
+      <option value="one">One</option>
+      <option value="Two">Two</option>
+      <option value="Three">Three</option>
+      <option value="More_than_3">More than 3</option>
+    </select>
+  </div><br>
+  <div>
+    <label for="what_kind">What kind of relationship are you looking for ?</label>
+    <select name="what_kind" id="dropdown">
+      <option value="Long term">Long term</option>
+      <option value="Just Hookup">Just Hookup</option>
+      <option value="Looking for Friend">Looking for Friend</option>
+    </select>
+  </div><br>
+</fieldset>
+
+<!-- Text Area -->
+<fieldset>
+<legend>Essay section</legend>
+<div>
+  <label for="msg"></label>
+<p> How would you describe your personality? </p>
+<textarea name="user_msg" id="msg" cols="30" rows="5" placeholder="Enter text here ...."></textarea>
+</div>
+</fieldset>
+
+<!-- send button -->
+<div id="submitbutton">
+  <button id="submit" type="submit">Send Application</button>
+</div>
     </form>
   </body>
 </html>  
