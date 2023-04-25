@@ -1,0 +1,99 @@
+body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#survey-form{
+  background-color: white;
+}
+
+#outside{
+  background-color: lightblue;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+h1{
+  font-size: 1.5rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+form{
+  margin: 0 auto;
+  width: 70%;
+  padding: 16px;
+  border: 1px solid #c9c9c9;
+  border-radius: 16px;
+}
+
+#name_label, #email_label, #number_label, #Age_label{
+  display: inline-block;
+  width: 200px;
+  text-align: left;
+}
+
+fieldset{
+  border: 1px solid lightgray;
+  margin: 25px;
+}
+
+legend{
+  font-size: medium;
+  font-weight: 600;
+}
+
+#number{
+  width:100px;
+}
+
+div + div{
+  margin-top: 1em;
+}
+
+button {
+  margin: 5px;
+  font-size: 20px;
+  text-transform: capitalize;
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+#submitbutton {
+  display:flex;
+  justify-content: center;
+}
+
+input {
+  margin: 0;
+  width: 250px;
+  height: 25px;
+  border: 1px solid #999;
+}
+
+input[type=checkbox],
+input[type=radio] {
+  width:50px;
+  margin:2px;
+  vertical-align: middle;
+  position: relative;
+  bottom: 1px;
+}
+
+ textarea {
+  max-width: 100%;
+  height: 20%;
+  border: 1px solid #999;
+}
+
+#description {
+  text-align: center;
+}
+
+#dropdown{
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+}
