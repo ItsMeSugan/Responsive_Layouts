@@ -1,98 +1,107 @@
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css" >
-    <title>Dating Application Survey Form</title>
-  </head>
-  <body>
-    <div id="outside">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Dating Application Survey Form</title>
+</head>
+
+<body>
+  <div id="outside">
     <form id="survey-form">
       <h1 id="title">Survey Form</h1>
-      <p id="description">Collecting details from random adults about their relationship status</p>
+      <p id="description">
+        Collecting details from random adults about their relationship status
+      </p>
 
-<!-- personal details -->
+      <!-- personal details -->
 
-      <fieldset >
+      <fieldset>
         <legend>Personal Details</legend>
-        <br>
-      <div>
-      <label for="name" id="name_label">Name : </label>
-      <input type="text" align="right" name="name" id="name" placeholder="Enter your Name" required>
-      </div>
-      <div>
-      <label for="email" id="email_label">Email Id : </label>
-      <input type="email" name="email" id="email" placeholder="Enter your Email" required/>
-      </div>
-      <div>
-        <label for="phone" id="number_label">Phone Number:</label>
-        <input type="text" id="phone" name="phone" placeholder="Enter your 10 digit number" maxlength="10">
-      </div>
-      <div>
-      <label for="number" id="Age_label">Your Age : </label>
-      <input type="number" id="number" min="18" max="25" placeholder="Select Age"/>
-      </div>
-      <div>
-        <label for="gender">Gender</label>
-        <p>
-          <input type="radio" name="gender" value="male" checked>Male <br>
-          <input type="radio" name="gender" value="Female">Female <br>
-          <input type="radio" name="gender" value="others">Others <br>
-        </p>  
-      </div> 
-</fieldset>
+        <br />
+        <div>
+          <label for="name" id="name_label">Name : </label>
+          <input type="text" align="right" name="name" id="name" placeholder="Enter your Name" required />
+        </div>
+        <div>
+          <label for="email" id="email_label">Email Id : </label>
+          <input type="email" name="email" id="email" placeholder="Enter your Email" required />
+        </div>
+        <div>
+          <label for="phone" id="number_label">Phone Number:</label>
+          <input type="text" id="phone" name="phone" placeholder="Enter your 10 digit number" maxlength="10" />
+        </div>
+        <div>
+          <label for="number" id="Age_label">Your Age : </label>
+          <input type="number" id="number" min="18" max="25" placeholder="Select Age" />
+        </div>
+        <div>
+          <label for="gender">Gender</label>
+          <p>
+            <input type="radio" name="gender" value="male" checked />Male
+            <br />
+            <input type="radio" name="gender" value="Female" />Female <br />
+            <input type="radio" name="gender" value="others" />Others <br />
+          </p>
+        </div>
+      </fieldset>
 
-<!-- checkboxes -->
-<fieldset>
-  <legend>Check that Apply</legend>
-  <div>
-  <p>
-    <input type="checkbox" name="q1">I have a Job<br>
-    <input type="checkbox" name="q2">I have a House and Car<br>
-    <input type="checkbox" name="q3">I would not date someone older person then me<br>
-    <input type="checkbox" name="q4">I have been divorced before<br>
-  </p>
-  </div>
-</fieldset>
-<br>
-<!-- dropdown menus -->
+      <!-- checkboxes -->
+      <fieldset>
+        <legend>Check that Apply</legend>
+        <div>
+          <p>
+            <input type="checkbox" name="q1" />I have a Job<br />
+            <input type="checkbox" name="q2" />I have a House and Car<br />
+            <input type="checkbox" name="q3" />I would not date someone older
+            person then me<br />
+            <input type="checkbox" name="q4" />I have been divorced before<br />
+          </p>
+        </div>
+      </fieldset>
+      <br />
+      <!-- dropdown menus -->
 
-<fieldset>
-  <legend>Select the category that includes here</legend>
-  <br>
-  <div>
-    <label for="Noofpartners">How many Relations have you been with :</label>
-    <select name="Noofpartners" id="dropdown">
-      <option value="one">One</option>
-      <option value="Two">Two</option>
-      <option value="Three">Three</option>
-      <option value="More_than_3">More than 3</option>
-    </select>
-  </div><br>
-  <div>
-    <label for="what_kind">What kind of relationship are you looking for ?</label>
-    <select name="what_kind" id="dropdown">
-      <option value="Long term">Long term</option>
-      <option value="Just Hookup">Just Hookup</option>
-      <option value="Looking for Friend">Looking for Friend</option>
-    </select>
-  </div><br>
-</fieldset>
+      <fieldset>
+        <legend>Select the category that includes here</legend>
+        <br />
+        <div>
+          <label for="Noofpartners">How many Relations have you been with :</label>
+          <select name="Noofpartners" id="dropdown">
+            <option value="one">One</option>
+            <option value="Two">Two</option>
+            <option value="Three">Three</option>
+            <option value="More_than_3">More than 3</option>
+          </select>
+        </div>
+        <br />
+        <div>
+          <label for="what_kind">What kind of relationship are you looking for ?</label>
+          <select name="what_kind" id="dropdown">
+            <option value="Long term">Long term</option>
+            <option value="Just Hookup">Just Hookup</option>
+            <option value="Looking for Friend">Looking for Friend</option>
+          </select>
+        </div>
+        <br />
+      </fieldset>
 
-<!-- Text Area -->
-<fieldset>
-<legend>Essay section</legend>
-<div>
-<p> How would you describe your personality? </p>
-<textarea name="user_msg" id="msg" cols="30" rows="5" placeholder="Enter text here ...."></textarea>
-</div>
-</fieldset>
+      <!-- Text Area -->
+      <fieldset>
+        <legend>Essay section</legend>
+        <div>
+          <p>How would you describe your personality?</p>
+          <textarea name="user_msg" id="msg" cols="30" rows="5" placeholder="Enter text here ...."></textarea>
+        </div>
+      </fieldset>
 
-<!-- send button -->
-<div id="submitbutton">
-  <button id="submit" type="submit">Send Application</button>
-</div>
+      <!-- send button -->
+      <div id="submitbutton">
+        <button id="submit" type="submit">Send Application</button>
+      </div>
     </form>
-    </div>
-  </body>
-</html>  
+  </div>
+</body>
+
+</html>
